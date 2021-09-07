@@ -9,7 +9,7 @@ exports.config = {
   mochaOpts: {
     ui: 'bdd',
     require: ['@babel/register'],
-    timeout: 6000,
+    timeout: 1000 * 60,
   },
   maxInstances: 1,
   sync: true,
