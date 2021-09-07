@@ -13,7 +13,7 @@ exports.config = {
   },
   maxInstances: 1,
   sync: true,
-  specs: ['./login.specs.js'], // list of specs files
+  specs: ['./yt.specs.js'], // list of specs files
   capabilities: [
     {
       platformName: 'Android',
