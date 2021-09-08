@@ -1,3 +1,5 @@
+const { join } = require('path');
+
 exports.config = {
   runner: 'local',
   host: 'localhost',
@@ -13,12 +15,13 @@ exports.config = {
   },
   maxInstances: 1,
   sync: true,
-  specs: ['./yt.specs.js'], // list of specs files
+  specs: ['./specs/**/yt*.spec.js'], // list of specs files
   capabilities: [
     {
       platformName: 'Android',
       automationName: 'UiAutomator2',
       udid: '8AHY0LAXB', // check with adb devices
+      app: join(process.cwd(), './app/yt.apk'),
       appPackage: 'com.youtubesearchapi',
       appActivity: '.MainActivity',
     },
