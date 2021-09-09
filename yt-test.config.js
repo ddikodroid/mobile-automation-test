@@ -20,7 +20,9 @@ exports.config = {
     {
       platformName: 'Android',
       automationName: 'UiAutomator2',
-      udid: '8AHY0LAXB', // check with adb devices
+      // udid: '8AHY0LAXB', // check with adb devices
+      udid: 'emulator-5554', //avd
+      avd: 'pixel',
       app: join(process.cwd(), './app/yt.apk'),
       appPackage: 'com.youtubesearchapi',
       appActivity: '.MainActivity',
